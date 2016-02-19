@@ -1,0 +1,3 @@
+function wl = vacuumcorrection(wl)
+wl=wl.*(1+0.05792105./(238.0185-1e6./wl.^2)...
+    +0.00167917./(57.362-1e6./wl.^2));%refractive index minus 1
